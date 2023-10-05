@@ -19,7 +19,8 @@
 
 ## project1
 
-A Fiori application.
+A Fiori application
+This application is a master-detail application. The first page consists of a cursol and route to the material table page. On the second page, you can see the data in the table from the backend service, and by clicking on rows of the table, a detail page will open, which will show the full details of the selected material.
 
 ### Starting the generated app
 
