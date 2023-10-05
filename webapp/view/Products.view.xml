@@ -1,0 +1,43 @@
+<mvc:View controllerName="project1.controller.Products" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:c="sap.ui.core" displayBlock="true" height="100%" busyIndicatorDelay="0">
+    <Page id="page" title="{i18n>titlePage2}" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <Table id="idProductsTable" items="{ path: 'productModel>/ProductSet'}" selectionChange="onListItemPressed" mode="SingleSelectMaster">
+                <columns>
+                    <Column width="12em">
+                        <Text text="{i18n>prodid}" />
+                    </Column>
+                    <Column minScreenWidth="Tablet" demandPopin="true">
+                        <Text text="Name" />
+                    </Column>
+                    <Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                        <Text text="Category" />
+                    </Column>
+                    <Column minScreenWidth="Desktop" demandPopin="true" hAlign="Center">
+                        <Text text="Description" />
+                    </Column>
+                    <Column hAlign="Center">
+                        <Text text="SupplierName" />
+                    </Column>
+                    <Column hAlign="Center">
+                        <Text text="Actions" />
+                    </Column>
+                </columns>
+                <items>
+                    <ColumnListItem vAlign="Middle">
+                        <cells>
+                            <Text text="{productModel>ProductID}" />
+                            <Text text="{productModel>Name}" />
+                            <Text text="{productModel>Category}" />
+                            <Text text="{productModel>Description}" />
+                            <Text text="{productModel>SupplierName}" />
+                            <HBox alignContent="End" class="sapUiLargeMarginBegin">
+                                <Button icon="sap-icon://edit" class="sapUiSmallMarginBegin" press="onPressEditItem"/>
+                                <Button icon="sap-icon://delete" class="sapUiTinyMarginBegin" press="onPressDeleteItem"/>
+                            </HBox>
+                        </cells>
+                    </ColumnListItem>
+                </items>
+            </Table>
+        </content>
+    </Page>
+</mvc:View>

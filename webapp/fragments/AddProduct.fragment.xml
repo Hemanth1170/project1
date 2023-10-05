@@ -1,0 +1,30 @@
+<c:FragmentDefinition xmlns="sap.m" xmlns:c="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form">
+    <Dialog title="Product">
+        <l:Grid defaultSpan="L12 M12 S12" width="auto" id="idGrid">
+            <l:content>
+                <f:SimpleForm id="SimpleFormDisplay354" minWidth="1024" maxContainerCols="2" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="2" columnsM="2">
+                    <f:content>
+                        <Label text="Product Id" />
+                        <Input id="idProd" />
+
+                        <Label text="Product Name" />
+                        <Input id="idProdName" />
+
+                        <Label text="Category" />
+                        <Input id="idCategory" />
+
+                        <Label text="Description" />
+                        <Input id="idDescription" />
+
+                        <Label text="Supplier" />
+                        <Input id="idSupplier" />
+                    </f:content>
+                </f:SimpleForm>
+            </l:content>
+        </l:Grid>
+        <buttons>
+            <Button text="Close" press="closeDialog" type="Reject" />
+            <Button text="Save" press="onSave" type="Accept" />
+        </buttons>
+    </Dialog>
+</c:FragmentDefinition>

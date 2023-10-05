@@ -1,0 +1,18 @@
+<mvc:View controllerName="project1.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="page">
+        <content>
+            <VBox alignItems="Center">
+                <HeaderContainer height="30%" width="100%">
+                    <content>
+                        <Carousel height="30%">
+                            <Image src="/img/ms1.jpg" alt="Example picture of speakers" />
+                            <Image src="/img/ms2.jpg" alt="Example picture of USB flash drive" />
+                            <Image src="/img/ms3.jpg" alt="Example picture of spotlight" />
+                        </Carousel>
+                    </content>
+                </HeaderContainer>
+                <Button icon="sap-icon://navigation-right-arrow" text="Go To Products" type="Emphasized" press="onPressGoto" class="sapUiMediumMargin"/>
+            </VBox>
+        </content>
+    </Page>
+</mvc:View>

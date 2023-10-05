@@ -1,0 +1,28 @@
+<mvc:View controllerName="project1.controller.ProductDetail" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" displayBlock="true" height="100%" busyIndicatorDelay="0">
+    <Page id="page" title="{i18n>titlePage3}" showNavButton="true" navButtonPress=".onNavBack">
+        <content>
+            <HBox items="{oProdDetailModel>/}">
+                <items>
+                    <f:SimpleForm minWidth="1024" editable="false" layout="ResponsiveGridLayout" labelSpanL="3" labelSpanM="3" emptySpanL="4" emptySpanM="4" columnsL="1">
+                        <f:content>
+                            <Label text="Product ID" />
+                            <Text text="{ProductID}" />
+                            <Label text="Name" />
+                            <Text text="{Name}" />
+                            <Label text="Category" />
+                            <Text text="{Category}" />
+                            <Label text="Description" />
+                            <Text text="{Description}" />
+                            <Label text="Supplier Name" />
+                            <Text text="{SupplierName}" />
+                            <Label text="Price" />
+                            <Text text="{Price}" />
+                            <Label text="Currency Code" />
+                            <Text text="{CurrencyCode}" />
+                        </f:content>
+                    </f:SimpleForm>
+                </items>
+            </HBox>
+        </content>
+    </Page>
+</mvc:View>
