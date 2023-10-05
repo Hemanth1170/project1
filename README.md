@@ -9,7 +9,7 @@
 |**Service Type**<br>SAP System (ABAP On Premise)|
 |**Service URL**<br>https://sapes5.sapdevcenter.com/sap/opu/odata/iwbep/GWSAMPLE_BASIC
 |**Module Name**<br>project1|
-|**Application Title**<br>App Title|
+|**Application Title**<br>Master Detail Application|
 |**Namespace**<br>|
 |**UI5 Theme**<br>sap_horizon|
 |**UI5 Version**<br>1.111.1|
